@@ -1,15 +1,13 @@
 
 * ,*:before, *:after{
     padding: 0;
-    margin: 0; 
+   margin: 0;
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-
-    
-    
+       
 }
 body{
-    background-image: url("hp-background.png");
+    background-image: url('/hp-background.png');
     background-color: #060042;
     background-size: 400px;
     background-repeat: repeat;
@@ -125,85 +123,44 @@ padding: 0;
 
 
 
-/* popup */
-.box {
-    /* width: 40%; */
-    margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-  
-  .button {
+@keyframes load {
+  0%{
+      opacity: 0.08;
+/*         font-size: 10px; */
+/* 				font-weight: 400; */
+      filter: blur(5px);
+      letter-spacing: 3px;
+      }
+  100%{
+/*         opacity: 1; */
+/*         font-size: 12px; */
+/* 				font-weight:600; */
+/* 				filter: blur(0); */
+      }
+}
 
-    padding: 10px;
+.animate {
+display:flex;
+justify-content: center;
+align-items: center;
+height:100%;
+margin: auto;
+width: 350px; 
+ font-size:26px; 
+ /* /* font-family: 'Azonix',sans-serif; */
+animation: load 1.2s infinite 0s ease-in-out;
+animation-direction: alternate;
+text-shadow: 0 0 1px white;
+}
+#PreLoader{
+  background: #000 ;
+  z-index:100;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  margin-top: -20px;
+  margin-left: -15px;
 
-    /* border: 2px solid #06D85F; */
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
- 
-  
-  .overlay {
-    position: fixed;
-    top: -0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.767);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-    
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    margin: 70px auto;
-    /* padding: 2px; */
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    
-  }
-  
-
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgba(30, 255, 0, 0.877);
-  }
-  
-.content {
-    max-height: 30%;
-    overflow: auto;
-     
-  }
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 80%;
-    }
-    .popup{
-      width: 80%;
-    }
-  }
-
+}
 
 

@@ -8,7 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Links Page | Joseph Maharjan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,28 +25,13 @@
 </head>
 
 <body>
+    <div id="PreLoader">
+        <h2 class="animate">Loading</h2>
+    </div>
 
-    <!-- josephmaharjan gif
-    <img src="logo.gif" width="271" height="105" class="img1" title="joseph.gif" /> -->
-
-
-
-
-    <a class="button" href="#popup1">
-        <img src="joseph logo.png" alt="Joseph Maharjan" class="image1">
-    </a>
-
-
-    <div id="popup1" class="overlay">
-        <div class="popup">
-
-            <a class="close" href="#">&times;</a>
-            <div class="content">
-                <img src="./Hello World (1).png" alt="" height="580px" width="300px">
-
-            </div>
-        </div>
-        <br>
+    <a href="Hello World.png" id="PP" data-lightbox="mygallery">
+        <img src="joseph logo.png" class="image1" alt="joseph"></a>
+    <br>
     </div>
     <div id="joseph"> @JosephMaharjan <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22.5"
             height="22.5     " viewBox="0 0 172 172" style=" fill:#000000;">
@@ -77,7 +64,7 @@
 
     <h1>
         <p class="typewrite" data-period="2000"
-            data-type='[ "Just Started Coding...", "I am Creative.", "I Love Researching, Arts.", "I Love to Develop." ]'>
+            data-type='[ "Just Started Coding...", "loves Creativity.", "loves Researching, Arts.", "loves to Develop." ]'>
             <span class="wrap"></span>
         </p>
     </h1>
@@ -97,6 +84,8 @@
                     class="fab fa-instagram icon-large"></i> Instagram</a>
             <a id="Slink" href="https://youtube.com/josephmaharjan?sub_confirmation=1" target="_blank"
                 title="Youtube Channel"> <i class="fab fa-youtube icon-large"></i> YouTube Channel</a>
+            <a id="Slink" href="https://twitter.com/MaharjanJoseph" target="_blank" title="Twitter Account"> <i
+                    class="fab fa-twitter icon-large"></i> Twitter</a>
 
             <a id="Slink" href="https://github.com/josephmaharjan" target="_blank" title="Github Account"> <i
                     class="fab fa-github icon-large"></i> GitHub</a>
@@ -120,7 +109,13 @@
 
             ago...
         </div>
-        <script src="main.js"></script>
+        <script src="js/lightbox-plus-jquery.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.map"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/lightbox.min.map"></script>
+        <script src="js/main.js"></script>
 
 </body>
 <footer onmousedown="return false" onselectstart="return false">Joseph Maharjan &copy2021 </footer>
