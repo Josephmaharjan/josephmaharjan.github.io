@@ -8,7 +8,7 @@
 }
 body{
     background-image: url('../img/hp-background.png');
-    background-color: #060042;
+    /* background-color: #060042; */
     background-size: 400px;
     background-repeat: repeat;
     color: #ffffff;
